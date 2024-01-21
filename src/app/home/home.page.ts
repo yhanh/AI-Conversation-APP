@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
+import { IonicModule } from '@ionic/angular';
+import { Robot3dComponent } from '../components/robot3d/robot3d.component';
+import { VoicerecordingComponent } from '../components/voicerecording/voicerecording.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent],
+  imports: [IonicModule, Robot3dComponent, VoicerecordingComponent],
 })
 export class HomePage {
-  constructor() {}
+  constructor() { }
 }
